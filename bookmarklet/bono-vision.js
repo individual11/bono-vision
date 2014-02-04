@@ -4,7 +4,8 @@ var bono = document.createElement("div");
 //color purple we are using
 bono.style.background = '#820BBB';
 
-//how transparent we want it
+//transparency stuff
+var maxTransparency = 0.4; 
 bono.style.opacity = 0.0;
 bono.style.filter = "alpha(opacity=00)";
 
@@ -28,14 +29,14 @@ document.body.parentElement.style.position = 'relative';
 document.body.insertBefore(bono, document.body.firstChild);
 
 //fadein code (courtesy of http://youmightnotneedjquery.com/)
-function fadeIn(el) {
+function fadeIn(el, endTransparency) {
   el.style.opacity = 0;
 
   var last = +new Date;
   var tick = function() {
     el.style.opacity = Number(el.style.opacity) + (new Date - last) / 400;
     last = +new Date;
-    if (el.style.opacity < 0.4){
+    if (el.style.opacity < endTransparency){
       (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
     }
   }
@@ -43,4 +44,4 @@ function fadeIn(el) {
 }
 
 //now fade it in
-fadeIn(bono);
+fadeIn(bono, maxTransparency);
