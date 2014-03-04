@@ -20,10 +20,8 @@ body, html{
 	margin: 120px auto 80px auto;
 }
 
-.container .bookmarklet{
-
-}
-
-.container .bookmarklet a{
-
+.charity{
+	position:absolute;
+	bottom:0;
+	left:0;
 }
