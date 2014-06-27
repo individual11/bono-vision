@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A bookmarklet to see any web page the way Bono sees the world.">
-    <meta name="author" content="David Vogeleer <david@individual11.com>">
 
     <!-- styles for this template -->
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="public/css/main.css" rel="stylesheet">
 
 
@@ -19,12 +19,17 @@
       <h1>
         <img src="public/img/logo.jpg" alt="Bono Vision" />
       </h1>
-      <p>Pariatur nostrud dolor et commodo anim sint.</p>
       <div class="bookmarklet">
         <a href="javascript:(function(){window.s127=document.createElement('script');window.s127.setAttribute('type','text/javascript');window.s127.setAttribute('src','https://raw.github.com/individual11/bono-vision/master/bono-vision.min.js');document.getElementsByTagName('body')[0].appendChild(window.s127);})();">
-          <img src="public/img/glasses.jpg" alt="Bono Vision Bookmarklet, drag to bookmarks bar." />
+          <img id="glasses" src="public/img/glasses.jpg" alt="Bono Vision Bookmarklet, drag to bookmarks bar." />
         </a>
       </div><!-- /bookmarklet -->
+      <div>
+          <div class="bump">Drag the glasses to your bookmark bar</div>
+          <div class="green bump"><em>then</em></div>
+          <div class="bump">click or tap the button to activate<br />BonoVision wherever you go</div>
+      </div>
+      <div class="footer"><span class="green">See the ‘net the way bono sees it with bono vision</span>  notion <a href="http://twitter.com/briancrandall">@briancrandall</a>  code <a href="http://twitter.com/missinglink">@missinglink</a>  graphics <a href="http://twitter.com/thenicoleham">@thenicoleham</a></div>
     </div><!-- /container -->
     <div class="charity">
       <a href="#">
